@@ -62,6 +62,20 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        employeeCode: employeeCode {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N6 &kp N4 &kp N8 &kp NUMBER_2 &kp N8 &kp NUMBER_5>;
+            label = "EMPLOYEECODE";
+        };
+
+        Pass: Pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(X) &kp K &kp Y &kp S &kp T &kp M &kp N0 &kp N2 &kp N0 &kp N9 &kp N0 &kp N1>;
+            label = "PASS";
+        };
     };
 
     behaviors {
@@ -80,10 +94,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                   &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))               &kp SQT        &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 SPACE      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                      &kp T                                                &kp Y        &kp U  &lt 6 I    &kp O          &kp P
+&mt LCTRL A       &kp S         &kp D         &kp F                      &kp G     &kp LS(LG(S))               &kp SQT        &kp H        &kp J  &kp K      &kp L          &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B     &lt_to_layer_0 6 COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp RIGHT_GUI  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LEFT_GUI  &mkp MB1  &lt_to_layer_0 1 SPACE      &kp BACKSPACE  &lt 2 ENTER                                   &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -91,16 +105,16 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans         &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &Pass   &employeeCode  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans         &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans         &trans  &trans      &trans   &trans                          &kp F12
             >;
         };
 
         NUM {
             bindings = <
-&kp QUESTION                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                                          &kp PLUS               &kp ASTERISK       &kp TILDE    &kp EQUAL        &kp EXCLAMATION
+&kp QUESTION                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                                          &kp PLUS               &kp ASTERISK       &kp EQUAL    &kp EQUAL        &kp EXCLAMATION
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_PARENTHESIS  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &kp AT_SIGN        &kp COMMA    &kp PERIOD       &kp NON_US_BACKSLASH
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT_BRACE        &kp AMPERSAND                &kp PIPE        &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp PERCENT  &kp RIGHT_BRACE  &kp POUND
 &trans                      &trans           &trans           &trans           &trans                &trans                       &trans          &trans                                                                  &kp TILDE
@@ -147,10 +161,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &kp L   &kp U   &trans  &trans                       &trans  &trans  &trans  &trans  &trans
+&trans  &kp I   &kp A   &kp O   &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp X   &kp C   &kp V   &trans  &kp TAB      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                          &trans
             >;
         };
     };
