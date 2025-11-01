@@ -144,10 +144,10 @@
 
         iphone {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                             &kp LG(LS(NUMBER_3))  &kp LG(A)             &lt 6 LG(C)  &kp LG(V)              &kp LG(TAB)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LEFT_ARROW        &mkp MB1              &kp RG(X)    &mkp MB2               &kp RIGHT_ARROW
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp ESCAPE            &kp LG(LEFT_BRACKET)  &kp RG(H)    &kp LG(RIGHT_BRACKET)  &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                                                       &kp DEL
+&trans  &trans  &trans  &trans  &trans                             &kp LG(LS(NUMBER_3))  &kp LG(A)             &kp LG(C)  &kp LG(V)              &kp LG(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LEFT_ARROW        &mkp MB1              &kp RG(X)  &mkp MB2               &kp RIGHT_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp ESCAPE            &kp LG(LEFT_BRACKET)  &kp RG(H)  &kp LG(RIGHT_BRACKET)  &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                                                     &kp DEL
             >;
         };
 
@@ -175,15 +175,6 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &kp L   &kp U   &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &kp I   &kp A   &kp O   &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp X   &kp C   &kp V   &trans  &kp TAB      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                          &trans
             >;
         };
     };
