@@ -53,6 +53,16 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        to_layerforiphone {
+            bindings = <&lt 8 CAPS>;
+            key-positions = <9 6>;
+        };
     };
 
     macros {
@@ -94,9 +104,9 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                      &kp T                                                &kp Y        &kp U  &lt 6 I    &kp O          &kp P
+&kp Q             &kp W         &kp E         &kp R                      &kp T                                                &kp Y        &kp U  &lt 5 I    &kp O          &kp P
 &mt LCTRL A       &kp S         &kp D         &kp F                      &kp G     &kp LS(LG(S))               &kp SQT        &kp H        &kp J  &kp K      &kp L          &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B     &lt_to_layer_0 6 COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp RIGHT_GUI  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B     &lt_to_layer_0 6 COLON      &kp SEMICOLON  &kp N        &kp M  &kp RCTRL  &kp RIGHT_GUI  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LEFT_GUI  &mkp MB1  &lt_to_layer_0 1 SPACE      &kp BACKSPACE  &lt 2 ENTER                                   &kp DEL
             >;
 
@@ -105,19 +115,19 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans         &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &Pass   &employeeCode  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans         &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans         &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans         &trans                       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&trans  &trans  &Pass   &employeeCode  &trans  &trans      &kp F13  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans         &trans  &trans      &trans   &kp F11  &kp F12  &trans  &trans  &trans
+&trans  &trans  &trans  &trans         &trans  &trans      &trans   &trans                            &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp QUESTION                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                                          &kp PLUS               &kp ASTERISK       &kp EQUAL    &kp EQUAL        &kp EXCLAMATION
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_PARENTHESIS  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &kp AT_SIGN        &kp COMMA    &kp PERIOD       &kp NON_US_BACKSLASH
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT_BRACE        &kp AMPERSAND                &kp PIPE        &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp PERCENT  &kp RIGHT_BRACE  &kp POUND
-&trans                      &trans           &trans           &trans           &trans                &trans                       &trans          &trans                                                                  &kp TILDE
+&kp QUESTION                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS                                                          &kp MINUS              &kp PLUS          &kp SLASH          &kp ASTERISK  &kp EXCLAMATION
+&kp EQUAL                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_PARENTHESIS  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp COMMA          &kp PERIOD    &kp NON_US_BACKSLASH
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT_BRACE        &kp AMPERSAND                &kp PIPE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT   &kp POUND
+&trans                      &trans           &trans           &trans           &trans                &trans                       &trans          &trans                                                                    &kp TILDE
             >;
         };
 
@@ -165,6 +175,15 @@
 &trans  &kp I   &kp A   &kp O   &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp X   &kp C   &kp V   &trans  &kp TAB      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans                          &trans
+            >;
+        };
+
+        iphone {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans        &kp RG(V)  &kp LS(LG(NUMBER_3))   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(LBKT)  &kp RG(C)  &kp RG(RIGHT_BRACKET)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans        &kp RG(H)  &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &trans
             >;
         };
     };
