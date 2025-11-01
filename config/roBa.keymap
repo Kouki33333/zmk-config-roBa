@@ -153,9 +153,9 @@
 
         iphone {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                             &kp LG(LS(NUMBER_3))  &kp LG(A)             &lt 6 LG(C)  &kp LG(V)              &trans
+&trans  &trans  &trans  &trans  &trans                             &kp LG(LS(NUMBER_3))  &kp LG(A)             &lt 6 LG(C)  &kp LG(V)              &kp LG(TAB)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LEFT_ARROW        &mkp MB1              &kp RG(X)    &mkp MB2               &kp RIGHT_ARROW
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp ESCAPE            &kp LG(LEFT_BRACKET)  &kp RG(H)    &kp LG(RIGHT_BRACKET)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp ESCAPE            &kp LG(LEFT_BRACKET)  &kp RG(H)    &kp LG(RIGHT_BRACKET)  &kp TAB
 &trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                                                       &kp DEL
             >;
         };
