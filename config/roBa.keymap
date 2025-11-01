@@ -60,8 +60,13 @@
         };
 
         to_layarforiphone {
-            bindings = <&tog 7>;
+            bindings = <&tog 5>;
             key-positions = <6 8>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <7 9>;
         };
     };
 
@@ -153,10 +158,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                             &kp LG(LS(NUMBER_3))  &kp LG(A)     &kp LG(C)  &kp LG(V)              &kp LG(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LEFT_ARROW        &mkp MB1      &kp LG(X)  &mkp MB2               &kp RIGHT_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp ESCAPE            &kp LG(LBKT)  &kp LG(H)  &kp LG(RIGHT_BRACKET)  &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                                             &kp DELETE
             >;
         };
 
