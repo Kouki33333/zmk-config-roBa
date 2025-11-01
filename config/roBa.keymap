@@ -178,10 +178,10 @@
 
         iphone {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                             &kp ESCAPE      &kp LG(A)             &kp LG(C)  &kp LG(V)              &kp LG(TAB)
+&trans  &trans  &trans  &trans  &trans                             &kp ESCAPE      &kp LG(A)             &kp LG(C)  &kp LG(V)              &kp DELETE
 &trans  &trans  &trans  &trans  &trans  &trans      &kp LG(PLUS)   &kp LEFT_ARROW  &mkp MB1              &kp RG(X)  &mkp MB2               &kp RIGHT_ARROW
 &trans  &trans  &trans  &trans  &trans  &trans      &kp LG(MINUS)  &kp LS(TAB)     &kp LG(LEFT_BRACKET)  &kp RG(H)  &kp LG(RIGHT_BRACKET)  &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                                               &kp DEL
+&trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                                               &kp LEFT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
