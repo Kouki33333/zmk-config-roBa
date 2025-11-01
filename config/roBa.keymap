@@ -59,9 +59,9 @@
             key-positions = <0 1>;
         };
 
-        to_layerforiphone {
-            bindings = <&tog 4>;
-            key-positions = <9 6>;
+        to_layarforiphone {
+            bindings = <&tog 7>;
+            key-positions = <6 8>;
         };
     };
 
@@ -104,9 +104,9 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                      &kp T                                                &kp Y        &kp U  &lt 6 I    &kp O          &kp P
+&kp Q             &kp W         &kp E         &kp R                      &kp T                                                &kp Y        &kp U  &lt 5 I    &kp O          &kp P
 &mt LCTRL A       &kp S         &kp D         &kp F                      &kp G     &kp LS(LG(S))               &kp SQT        &kp H        &kp J  &kp K      &kp L          &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B     &lt_to_layer_0 7 COLON      &kp SEMICOLON  &kp N        &kp M  &kp RCTRL  &kp RIGHT_GUI  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B     &lt_to_layer_0 6 COLON      &kp SEMICOLON  &kp N        &kp M  &kp RCTRL  &kp RIGHT_GUI  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LEFT_GUI  &mkp MB1  &lt_to_layer_0 1 SPACE      &kp BACKSPACE  &lt 2 ENTER                                   &kp DEL
             >;
 
@@ -142,15 +142,6 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        iphone {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                             &kp LG(LS(NUMBER_3))  &kp LG(A)             &kp LG(C)  &kp LG(V)              &kp LG(TAB)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LEFT_ARROW        &mkp MB1              &kp RG(X)  &mkp MB2               &kp RIGHT_ARROW
-&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp ESCAPE            &kp LG(LEFT_BRACKET)  &kp RG(H)  &kp LG(RIGHT_BRACKET)  &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                                                     &kp DEL
-            >;
-        };
-
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                        &trans  &trans    &trans    &trans    &trans
@@ -175,6 +166,15 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        iphone {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                             &kp LG(LS(NUMBER_3))  &kp LG(A)             &kp LG(C)  &kp LG(V)              &kp LG(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LEFT_ARROW        &mkp MB1              &kp RG(X)  &mkp MB2               &kp RIGHT_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp ESCAPE            &kp LG(LEFT_BRACKET)  &kp RG(H)  &kp LG(RIGHT_BRACKET)  &kp TAB
+&trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                                                     &kp DEL
             >;
         };
     };
