@@ -180,10 +180,10 @@
 
         iphone {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans                &kp RG(V)  &kp LS(LG(NUMBER_3))   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1              &kp RG(C)  &mkp MB2               &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LG(LEFT_BRACKET)  &kp RG(H)  &kp LG(RIGHT_BRACKET)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                          &trans
+&trans  &trans  &trans  &trans  &trans                             &kp LG(LS(NUMBER_3))  &kp LG(A)             &lt 5 LG(C)  &kp LG(V)              &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &kp LEFT_ARROW        &mkp MB1              &kp RG(X)    &mkp MB2               &kp RIGHT_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans      &trans         &trans                &kp LG(LEFT_BRACKET)  &kp RG(H)    &kp LG(RIGHT_BRACKET)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER                                                                       &kp DEL
             >;
         };
     };
