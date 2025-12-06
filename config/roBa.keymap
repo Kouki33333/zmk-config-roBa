@@ -81,7 +81,7 @@
         employeeCode: employeeCode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N6 &kp N4 &kp N8 &kp NUMBER_2 &kp N8 &kp NUMBER_5>;
+            bindings = <&kp LC(CAPSLOCK) &kp LS(CAPSLOCK) &kp N6 &kp N4 &kp N8 &kp NUMBER_2 &kp N8 &kp NUMBER_5>;
             label = "EMPLOYEECODE";
         };
 
@@ -90,6 +90,20 @@
             #binding-cells = <0>;
             bindings = <&kp LS(X) &kp K &kp Y &kp S &kp T &kp M &kp N0 &kp N2 &kp N0 &kp N9 &kp N0 &kp N1>;
             label = "PASS";
+        };
+
+        ToJapanese: japanese {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(CAPSLOCK)>;
+            label = "JAPANESE";
+        };
+
+        ToEnglish: ToEndlilsh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(CLCK) &kp LS(CAPSLOCK)>;
+            label = "TOENDLILSH";
         };
     };
 
@@ -120,10 +134,10 @@
 
         FUNCTION {
             bindings = <
-&trans    &trans          &kp UP_ARROW    &kp LS(CAPSLOCK)  &kp LC(CAPSLOCK)                       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp END           &trans      &kp F13  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans    &trans          &Pass           &employeeCode     &trans            &trans      &trans   &kp F11  &kp F12  &trans  &trans  &trans
-&trans    &trans          &trans          &trans            &trans            &trans      &trans   &trans                            &trans
+&ToEnglish              &kp LC(HOME)             &kp UP_ARROW    &kp LC(END)      &ToJapanese                       &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
+&kp HOME                &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END      &trans      &kp F13  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&kp LC(A)               &kp LC(X)                &kp LC(C)       &kp LC(V)        &kp LC(Y)    &trans      &trans   &kp F11  &kp F12  &trans  &trans  &trans
+&kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(TAB)     &trans           &trans       &trans      &trans   &trans                            &trans
             >;
         };
 
@@ -150,7 +164,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                        &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &mkp MB1  &tog 0  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &mkp MB1  &trans      &trans  &trans                              &trans
             >;
