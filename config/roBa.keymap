@@ -107,7 +107,7 @@
         FUNCTION {
             bindings = <
 &kp LC(HOME)            &kp HOME                 &kp UP_ARROW    &kp END          &kp LC(END)                             &kp RS(RIGHT_WIN)  &kp F1  &kp F2   &kp F3   &kp F4
-&ToEnglish              &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW  &ToJapanese  &trans      &kp F13        &kp RIGHT_WIN      &kp F5  &kp F6   &kp F7   &kp F8
+&ToEnglish              &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW  &ToJapanese  &trans      &kp TAB        &kp RIGHT_WIN      &kp F5  &kp F6   &kp F7   &kp F8
 &kp LC(LS(TAB))         &kp LS(TAB)              &kp ESC         &kp TAB          &kp LC(TAB)  &tog 0      &kp LC(PG_UP)  &kp LG(LC(PG_DN))  &kp F9  &kp F10  &kp F11  &kp F12
 &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &kp LG(TAB)     &trans           &trans       &trans      &trans         &trans                                       &trans
             >;
@@ -177,10 +177,10 @@
 
         windowsShortCut {
             bindings = <
-&trans     &trans        &kp RG(E)    &kp RG(R)  &trans                         &trans  &trans  &trans       &trans     &trans
-&kp RC(Z)  &kp RC(X)     &kp RC(C)    &kp RC(V)  &kp RC(A)  &trans      &trans  &trans  &trans  &trans       &kp RG(L)  &trans
-&trans     &kp RS(HOME)  &kp RS(END)  &kp RG(V)  &trans     &trans      &trans  &trans  &trans  &kp RG(TAB)  &trans     &trans
-&trans     &trans        &trans       &trans     &trans     &trans      &trans  &trans                                  &trans
+&trans     &trans        &kp RG(E)    &kp RG(R)  &trans                         &trans              &trans               &trans       &trans     &trans
+&kp RC(Z)  &kp RC(X)     &kp RC(C)    &kp RC(V)  &kp RC(A)  &trans      &trans  &trans              &trans               &trans       &kp RG(L)  &trans
+&trans     &kp RS(HOME)  &kp RS(END)  &kp RG(V)  &trans     &trans      &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RG(TAB)  &trans     &trans
+&trans     &trans        &trans       &trans     &trans     &trans      &trans  &trans                                                           &trans
             >;
         };
     };
