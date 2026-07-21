@@ -74,7 +74,7 @@
         ToEnglish: ToEndlilsh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LA(CAPSLOCK))>;
+            bindings = <&kp LA(CAPSLOCK)>;
             label = "TOENDLILSH";
         };
     };
@@ -117,18 +117,18 @@
 
         NUM {
             bindings = <
-&kp LS(SLASH)               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(NUMBER_4)                                                   &kp MINUS              &kp LS(EQUAL)     &kp SLASH          &kp LS(N8)  &kp EQUAL
-&kp LS(NUMBER_1)            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(N7)         &kp LC(LA(KP_NUMBER_0))      &kp LA(BACKSPACE)  &kp LEFT_PARENTHESIS   &kp LS(N9)        &kp LS(N0)         &kp COMMA   &kp BACKSLASH
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(BACKSLASH)  &kp LS(NUMBER_5)             &kp UNDER          &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERIOD  &kp LS(N3)
-&trans                      &trans           &trans           &trans           &trans             &trans                       &trans             &trans                                                                  &kp TILDE
+&kp LS(SLASH)               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(NUMBER_4)                                                   &kp MINUS      &kp LS(SEMICOLON)  &kp SLASH         &kp LS(N8)  &kp LS(MINUS)
+&kp LS(NUMBER_1)            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(INT3)       &kp LC(LA(KP_NUMBER_0))      &kp LA(BACKSPACE)  &kp SEMICOLON  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &kp COMMA   &kp INT3
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(BACKSLASH)  &kp LS(NUMBER_5)             &kp UNDER          &kp COLON      &kp RIGHT_BRACKET  &kp NON_US_HASH   &kp PERIOD  &kp LS(N3)
+&trans                      &trans           &trans           &trans           &trans             &trans                       &trans             &trans                                                          &kp TILDE
             >;
         };
 
         ARROW {
             bindings = <
 &kp MINUS  &kp PLUS       &kp SLASH         &kp ASTERISK  &kp EQUAL                      &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&kp TAB    &employeeCode  &kp LS(NUMBER_2)  &Pass         &trans     &trans      &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&trans     &trans         &trans            &trans        &trans     &trans      &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&kp TAB    &employeeCode  &kp LEFT_BRACKET  &Pass         &trans     &trans      &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&trans     &trans         &kp LS(NUMBER_2)  &trans        &trans     &trans      &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
 &trans     &trans         &trans            &trans        &trans     &trans      &trans  &trans                                                  &trans
             >;
 
