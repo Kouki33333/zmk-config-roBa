@@ -117,10 +117,10 @@
 
         NUM {
             bindings = <
-&kp LS(SLASH)               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(NUMBER_4)                                                   &kp MINUS      &kp LS(SEMICOLON)  &kp SLASH         &kp LS(N8)  &kp LS(MINUS)
-&kp LS(NUMBER_1)            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(INT3)       &kp LC(LA(KP_NUMBER_0))      &kp LA(BACKSPACE)  &kp SEMICOLON  &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &kp COMMA   &kp INT3
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(BACKSLASH)  &kp LS(NUMBER_5)             &kp UNDER          &kp COLON      &kp RIGHT_BRACKET  &kp NON_US_HASH   &kp PERIOD  &kp LS(N3)
-&trans                      &trans           &trans           &trans           &trans             &trans                       &trans             &trans                                                          &kp TILDE
+&kp LS(SLASH)               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(NUMBER_4)                                                  &kp MINUS         &kp LS(SEMICOLON)  &kp SLASH         &kp LS(SINGLE_QUOTE)  &kp LS(MINUS)
+&kp LS(NUMBER_1)            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(NUMBER_6)  &kp LC(LA(KP_NUMBER_0))      &kp LA(BACKSPACE)  &kp SEMICOLON     &kp LS(NUMBER_8)   &kp LS(NUMBER_9)  &kp COMMA             &kp INT3
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(INT3)      &kp LS(NUMBER_5)             &kp UNDER          &kp SINGLE_QUOTE  &kp RIGHT_BRACKET  &kp NON_US_HASH   &kp PERIOD            &kp LS(N3)
+&trans                      &trans           &trans           &trans           &trans            &trans                       &trans             &trans                                                                       &kp TILDE
             >;
         };
 
