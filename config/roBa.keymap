@@ -53,14 +53,14 @@
         employeeCode: employeeCode {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(CAPSLOCK) &kp N6 &kp N4 &kp N8 &kp NUMBER_2 &kp N8 &kp NUMBER_5>;
+            bindings = <&kp N6 &kp N4 &kp N8 &kp NUMBER_2 &kp N8 &kp NUMBER_5>;
             label = "EMPLOYEECODE";
         };
 
         Pass: Pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(CAPSLOCK) &kp LS(X) &kp K &kp Y &kp S &kp T &kp M &kp N0 &kp N2 &kp N0 &kp N9 &kp N0 &kp N1>;
+            bindings = <&kp LS(X) &kp K &kp Y &kp S &kp T &kp M &kp N0 &kp N2 &kp N0 &kp N9 &kp N0 &kp N1>;
             label = "PASS";
         };
 
